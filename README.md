@@ -1,0 +1,2 @@
+# 7kebiasaananakind
+anakhebat
