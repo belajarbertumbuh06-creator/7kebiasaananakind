@@ -4,164 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7 Kebiasaan Anak Indonesia Hebat - SDN 3 KENDALREJO</title>
-    <!-- Tailwind CSS (via CDN untuk kemudahan) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Nunito', sans-serif;
-            background-color: #e0f2fe; /* light blue */
-            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
-            overflow-x: hidden;
-        }
-
-        /* Animasi Melayang untuk Awan & Matahari */
-        @keyframes float-slow {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
-        }
-        @keyframes float-fast {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
+        body { font-family: 'Nunito', sans-serif; background-color: #e0f2fe; background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); overflow-x: hidden; }
+        @keyframes float-slow { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+        @keyframes float-fast { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
         .animate-float-slow { animation: float-slow 4s ease-in-out infinite; }
         .animate-float-fast { animation: float-fast 3s ease-in-out infinite; }
-
-        /* Animasi Glow untuk Bintang */
-        @keyframes glow {
-            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 5px rgba(253, 224, 71, 0.6)); }
-            50% { transform: scale(1.2); filter: drop-shadow(0 0 15px rgba(253, 224, 71, 1)); }
-        }
+        @keyframes glow { 0%, 100% { transform: scale(1); filter: drop-shadow(0 0 5px rgba(253, 224, 71, 0.6)); } 50% { transform: scale(1.2); filter: drop-shadow(0 0 15px rgba(253, 224, 71, 1)); } }
         .animate-glow { animation: glow 2s infinite; }
-        .animate-glow-delay { animation: glow 2s infinite; animation-delay: 1s; }
-
-        /* Animasi Lambaian Tangan */
-        @keyframes wave {
-            0% { transform: rotate(0deg); }
-            10% { transform: rotate(20deg); }
-            20% { transform: rotate(-15deg); }
-            30% { transform: rotate(15deg); }
-            40% { transform: rotate(-10deg); }
-            50%, 100% { transform: rotate(0deg); }
-        }
-        .animate-wave {
-            display: inline-block;
-            transform-origin: 70% 70%;
-            animation: wave 2.5s infinite;
-        }
-
-        /* Animasi Superman Terbang (Project By: AAW) */
-        @keyframes fly-superman {
-            0% { transform: translateX(-20px) translateY(0); }
-            25% { transform: translateX(20px) translateY(-5px); }
-            50% { transform: translateX(40px) translateY(0); }
-            75% { transform: translateX(20px) translateY(5px); }
-            100% { transform: translateX(-20px) translateY(0); }
-        }
-        .animate-superman {
-            animation: fly-superman 6s ease-in-out infinite;
-        }
-
-        .toggle-checkbox:checked {
-            right: 0;
-            border-color: #22c55e;
-        }
-        .toggle-checkbox:checked + .toggle-label {
-            background-color: #22c55e;
-        }
-        .card-habit {
-            transition: all 0.3s ease;
-        }
-        .card-habit:hover {
-            transform: translateY(-5px);
-        }
-        /* Custom file input */
-        .file-upload-label {
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        .file-upload-label:active {
-            transform: scale(0.95);
-        }
+        @keyframes fly-superman { 0% { transform: translateX(-20px) translateY(0); } 50% { transform: translateX(40px) translateY(0); } 100% { transform: translateX(-20px) translateY(0); } }
+        .animate-superman { animation: fly-superman 6s ease-in-out infinite; }
+        .toggle-checkbox:checked { right: 0; border-color: #22c55e; }
+        .toggle-checkbox:checked + .toggle-label { background-color: #22c55e; }
+        .card-habit { transition: all 0.3s ease; }
+        .card-habit:hover { transform: translateY(-5px); }
     </style>
 </head>
 <body class="text-gray-800 pb-12 relative min-h-screen">
-
-    <!-- Ornamen Animasi Background Header -->
+    <!-- Background -->
     <div class="absolute top-4 left-4 text-4xl animate-float-slow pointer-events-none z-0">☁️</div>
     <div class="absolute top-10 right-8 text-5xl animate-float-fast pointer-events-none z-0">☀️</div>
-    <div class="absolute top-24 left-1/4 text-3xl animate-float-fast pointer-events-none z-0 opacity-70">☁️</div>
 
     <header class="bg-blue-600 text-white rounded-b-[3rem] shadow-xl pt-10 pb-16 px-4 text-center relative z-10">
-        <!-- Logo / Nama Sekolah dengan Animasi Bintang -->
         <div class="flex items-center justify-center gap-2 mb-3">
             <span class="text-2xl animate-glow">🌟</span>
             <h2 class="text-xl md:text-2xl font-black text-yellow-300 drop-shadow-md tracking-wider">SDN 3 KENDALREJO</h2>
-            <span class="text-2xl animate-glow-delay">🌟</span>
+            <span class="text-2xl animate-glow">🌟</span>
         </div>
-        
         <div class="flex justify-center mb-2">
-            <span class="bg-red-500 text-white font-bold px-4 py-1 rounded-full shadow border-2 border-white text-sm md:text-base">
-                Pendidikan Bermutu Untuk Semua
-            </span>
+            <span class="bg-red-500 text-white font-bold px-4 py-1 rounded-full shadow border-2 border-white text-sm">Pendidikan Bermutu Untuk Semua</span>
         </div>
         <h1 class="text-4xl md:text-5xl font-black mb-2 drop-shadow-lg flex items-center justify-center gap-2">
-            <span class="text-red-500 bg-white rounded-xl px-3 py-1 inline-block -rotate-3">7</span> 
-            Kebiasaan Anak Hebat
-            <span class="animate-wave text-4xl">👋</span>
+            <span class="text-red-500 bg-white rounded-xl px-3 py-1 inline-block -rotate-3">7</span> Kebiasaan Anak Hebat
         </h1>
-        <p class="text-yellow-300 font-bold text-lg md:text-xl drop-shadow">
-            Hebat dalam Sikap, Cerdas dalam Tindakan, Untuk Indonesia Maju!
-        </p>
+        <p class="text-yellow-300 font-bold text-lg md:text-xl drop-shadow">Kedisiplinan Membawa Kesuksesan!</p>
     </header>
 
     <main class="max-w-4xl mx-auto px-4 -mt-10 relative z-20">
-        
-        <!-- Area Profil Pengguna -->
+        <!-- Area Identitas -->
         <div class="bg-white rounded-3xl p-6 shadow-lg mb-8 border-4 border-blue-100 flex flex-col md:flex-row items-center gap-6">
-            <!-- Upload Foto Profil -->
             <div class="relative group">
                 <input type="file" id="fotoProfil" accept="image/*" class="hidden" onchange="previewProfileImage(this)">
                 <label for="fotoProfil" class="cursor-pointer block">
                     <div id="profilContainer" class="w-32 h-32 rounded-full border-4 border-dashed border-blue-300 bg-blue-50 flex flex-col items-center justify-center overflow-hidden relative">
                         <i class="fa-regular fa-user text-4xl text-blue-300 mb-1" id="profilIcon"></i>
-                        <span class="text-xs font-bold text-blue-400 text-center" id="profilText">Unggah Foto</span>
+                        <span class="text-xs font-bold text-blue-400 text-center" id="profilText">Foto Kamu</span>
                         <img id="profilPreview" class="hidden absolute inset-0 w-full h-full object-cover">
                     </div>
-                    <div class="absolute bottom-0 right-0 bg-blue-500 text-white w-10 h-10 rounded-full flex items-center justify-center border-4 border-white shadow-md group-hover:bg-blue-600 transition">
+                    <div class="absolute bottom-0 right-0 bg-blue-500 text-white w-10 h-10 rounded-full flex items-center justify-center border-4 border-white shadow-md">
                         <i class="fa-solid fa-camera"></i>
                     </div>
                 </label>
             </div>
             
-            <!-- Input Nama -->
-            <div class="flex-1 w-full">
-                <label class="block text-gray-700 font-bold mb-2 text-lg">Siapa namamu, Jagoan?</label>
-                <input type="text" id="namaAnak" placeholder="Ketik nama lengkapmu di sini..." class="w-full text-lg border-2 border-gray-200 rounded-2xl px-5 py-3 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-100 transition-all font-semibold text-gray-700">
+            <div class="flex-1 w-full flex flex-col gap-4">
+                <div>
+                    <label class="block text-gray-700 font-bold mb-2 text-lg">Siapa namamu, Jagoan?</label>
+                    <input type="text" id="namaAnak" placeholder="Tulis nama lengkapmu..." class="w-full text-lg border-2 border-gray-200 rounded-2xl px-4 py-2 focus:outline-none focus:border-blue-500 font-semibold">
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-bold mb-2 text-lg">Kelas Berapa?</label>
+                    <select id="kelasAnak" class="w-full text-lg border-2 border-gray-200 rounded-2xl px-4 py-2 focus:outline-none focus:border-blue-500 font-semibold text-gray-700 bg-white">
+                        <option value="">-- Pilih Kelas --</option>
+                        <option value="1">Kelas 1</option>
+                        <option value="2">Kelas 2</option>
+                        <option value="3">Kelas 3</option>
+                        <option value="4">Kelas 4</option>
+                        <option value="5">Kelas 5</option>
+                        <option value="6">Kelas 6</option>
+                    </select>
+                </div>
             </div>
         </div>
 
         <form id="kebiasaanForm">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10" id="habitContainer">
-                <!-- Habit Cards akan di-generate via JavaScript -->
-            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10" id="habitContainer"></div>
 
-            <!-- Tombol Simpan -->
-            <div class="max-w-md mx-auto relative z-30">
-                <button type="button" id="simpanBtn" onclick="submitData(event)" class="w-full bg-green-500 text-white font-black text-xl py-4 rounded-full shadow-[0_6px_0_#16a34a] active:shadow-[0_0px_0_#16a34a] active:translate-y-[6px] transition-all hover:bg-green-400 flex items-center justify-center gap-3">
-                    <i class="fa-solid fa-check-circle"></i> Simpan & Lihat Hasil
+            <div class="max-w-md mx-auto relative z-30 flex flex-col gap-4">
+                <button type="button" id="simpanBtn" onclick="submitData(event)" class="w-full bg-green-500 text-white font-black text-xl py-4 rounded-full shadow-[0_6px_0_#16a34a] active:translate-y-[6px] transition-all hover:bg-green-400 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-paper-plane"></i> Kirim Laporan
+                </button>
+                <button type="button" onclick="bukaRekap()" class="w-full bg-blue-600 text-white font-bold text-lg py-3 rounded-full shadow-[0_4px_0_#1d4ed8] active:translate-y-[4px] transition-all hover:bg-blue-500 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-table-list"></i> Lihat Dasbor Rekap Guru
                 </button>
             </div>
         </form>
     </main>
 
-    <!-- Footer Beterbangan (Superman Effect) -->
-    <div class="w-full text-center mt-8 pb-6 z-10 pointer-events-none relative overflow-visible">
-        <div class="animate-superman bg-white/60 backdrop-blur-sm border border-white/80 shadow-sm px-5 py-2 rounded-full text-sm font-black text-blue-700 inline-flex items-center gap-2 relative">
-            🦸‍♂️ Project By: AAW 🚀
+    <!-- Modal Rekap (Tabel) -->
+    <div id="rekapModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-center justify-center z-50 p-4 transition-opacity opacity-0">
+        <div class="bg-white rounded-3xl p-6 w-full max-w-4xl max-h-[90vh] flex flex-col shadow-2xl transform scale-95 transition-transform duration-300" id="rekapContent">
+            <div class="flex justify-between items-center mb-4 border-b pb-3">
+                <h2 class="text-2xl font-black text-gray-800"><i class="fa-solid fa-chart-pie text-blue-500"></i> Dasbor Rekap Kedisiplinan</h2>
+                <button onclick="tutupRekap()" class="text-gray-400 hover:text-red-500 transition">
+                    <i class="fa-solid fa-xmark text-3xl"></i>
+                </button>
+            </div>
+            
+            <div class="overflow-y-auto flex-1 bg-gray-50 rounded-xl p-2 border">
+                <table class="w-full text-left border-collapse min-w-max">
+                    <thead class="bg-blue-200 sticky top-0 z-10 shadow-sm">
+                        <tr>
+                            <th class="p-3 text-sm font-bold text-gray-800 rounded-tl-lg w-10">No</th>
+                            <th class="p-3 text-sm font-bold text-gray-800">Siswa / Kelas</th>
+                            <th class="p-3 text-sm font-bold text-gray-800">Tanggal Upload</th>
+                            <th class="p-3 text-sm font-bold text-gray-800 rounded-tr-lg">Status Bukti</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rekapTableBody">
+                        <tr><td colspan="4" class="text-center p-5 text-gray-500">Memuat data... <i class="fa-solid fa-spinner fa-spin"></i></td></tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
@@ -172,228 +129,175 @@
                 <i class="fa-solid fa-star text-4xl"></i>
             </div>
             <h2 class="text-2xl font-black text-gray-800 mb-2">Kerja Bagus, Hebat!</h2>
-            <p class="text-gray-600 mb-6" id="successMessage">Data kebiasaan baikmu hari ini sudah dicatat. Terus pertahankan semangatmu!</p>
-            <button onclick="closeModal()" class="w-full bg-blue-500 text-white font-bold py-3 rounded-2xl hover:bg-blue-600 transition-colors">
-                Tutup & Kembali
-            </button>
+            <p class="text-gray-600 mb-6">Laporanmu sudah tercatat. Guru akan mengeceknya di Dasbor!</p>
+            <button onclick="window.location.reload()" class="w-full bg-blue-500 text-white font-bold py-3 rounded-2xl hover:bg-blue-600 transition-colors">Tutup & Selesai</button>
         </div>
     </div>
 
+    <!-- Footer -->
+    <div class="w-full text-center mt-8 pb-6 z-10 pointer-events-none relative"><div class="animate-superman bg-white/60 backdrop-blur-sm border border-white/80 shadow-sm px-5 py-2 rounded-full text-sm font-black text-blue-700 inline-flex items-center gap-2 relative">🦸‍♂️ Project By: AAW 🚀</div></div>
+
     <script>
-        // --- KONFIGURASI GOOGLE APPS SCRIPT URL ---
-        // INI ADALAH URL MILIKMU YANG SUDAH DITEMPELKAN
         const GAS_API_URL = "https://script.google.com/macros/s/AKfycbz58doDRd_o-mYVjgakh6a4fQVNGN0MTsRw9hEqC8oYxXHPI7qY0RIkHzwG-0PApMVM3w/exec";
 
         let profilBase64String = "";
         let buktiBase64Strings = {};
 
         const habits = [
-            { id: 1, title: "Bangun Pagi", icon: "fa-sun", color: "text-orange-500", bg: "bg-orange-50", border: "border-orange-200", prompt: "Jam berapa kamu bangun hari ini?" },
-            { id: 2, title: "Beribadah dengan Tertib", icon: "fa-hands-praying", color: "text-emerald-500", bg: "bg-emerald-50", border: "border-emerald-200", prompt: "Ibadah apa saja yang sudah kamu kerjakan?" },
-            { id: 3, title: "Berolahraga", icon: "fa-person-running", color: "text-red-500", bg: "bg-red-50", border: "border-red-200", prompt: "Wah, olahraga apa yang bikin kamu berkeringat hari ini?" },
-            { id: 4, title: "Makan Sehat", icon: "fa-apple-whole", color: "text-purple-500", bg: "bg-purple-50", border: "border-purple-200", prompt: "Sebutkan sayur atau buah lezat yang kamu makan!" },
-            { id: 5, title: "Gemar Belajar", icon: "fa-book-open", color: "text-cyan-500", bg: "bg-cyan-50", border: "border-cyan-200", prompt: "Materi seru apa yang kamu pelajari hari ini?" },
-            { id: 6, title: "Bermasyarakat", icon: "fa-users", color: "text-pink-500", bg: "bg-pink-50", border: "border-pink-200", prompt: "Kebaikan apa yang kamu lakukan bersama orang lain?" },
-            { id: 7, title: "Tidur Cepat", icon: "fa-moon", color: "text-indigo-500", bg: "bg-indigo-50", border: "border-indigo-200", prompt: "Jam berapa kamu berencana tidur malam ini?" }
+            { id: 1, title: "Bangun Pagi", icon: "fa-sun", color: "text-orange-500", bg: "bg-orange-50", border: "border-orange-200" },
+            { id: 2, title: "Beribadah", icon: "fa-hands-praying", color: "text-emerald-500", bg: "bg-emerald-50", border: "border-emerald-200" },
+            { id: 3, title: "Berolahraga", icon: "fa-person-running", color: "text-red-500", bg: "bg-red-50", border: "border-red-200" },
+            { id: 4, title: "Makan Sehat", icon: "fa-apple-whole", color: "text-purple-500", bg: "bg-purple-50", border: "border-purple-200" },
+            { id: 5, title: "Gemar Belajar", icon: "fa-book-open", color: "text-cyan-500", bg: "bg-cyan-50", border: "border-cyan-200" },
+            { id: 6, title: "Bermasyarakat", icon: "fa-users", color: "text-pink-500", bg: "bg-pink-50", border: "border-pink-200" },
+            { id: 7, title: "Tidur Cepat", icon: "fa-moon", color: "text-indigo-500", bg: "bg-indigo-50", border: "border-indigo-200" }
         ];
 
         const container = document.getElementById('habitContainer');
 
-        // Generate UI Kartu Kebiasaan
         habits.forEach(habit => {
             const card = document.createElement('div');
             card.className = `card-habit bg-white rounded-3xl p-5 shadow-sm border-2 ${habit.border} relative overflow-hidden`;
-            
-            // Icon background blur
-            const bgIcon = `<i class="fa-solid ${habit.icon} absolute -right-6 -bottom-6 text-9xl opacity-[0.03] ${habit.color}"></i>`;
-
             card.innerHTML = `
-                ${bgIcon}
+                <i class="fa-solid ${habit.icon} absolute -right-6 -bottom-6 text-9xl opacity-[0.03] ${habit.color}"></i>
                 <div class="flex items-center justify-between relative z-10">
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-2xl ${habit.bg} flex items-center justify-center ${habit.color}">
-                            <i class="fa-solid ${habit.icon} text-2xl"></i>
-                        </div>
-                        <div>
-                            <div class="text-sm font-black text-gray-400">KEBIASAAN ${habit.id}</div>
-                            <h3 class="text-lg font-black text-gray-800 leading-tight">${habit.title}</h3>
-                        </div>
+                        <div class="w-12 h-12 rounded-2xl ${habit.bg} flex items-center justify-center ${habit.color}"><i class="fa-solid ${habit.icon} text-2xl"></i></div>
+                        <div><div class="text-xs font-black text-gray-400">KEBIASAAN ${habit.id}</div><h3 class="text-lg font-black text-gray-800">${habit.title}</h3></div>
                     </div>
-                    
-                    <div class="relative inline-block w-14 mr-2 align-middle select-none transition duration-200 ease-in">
-                        <input type="checkbox" name="toggle" id="toggle-${habit.id}" class="toggle-checkbox absolute block w-7 h-7 rounded-full bg-white border-4 appearance-none cursor-pointer border-gray-300 transition-colors duration-200 ease-in-out" onchange="toggleStory(${habit.id})"/>
-                        <label for="toggle-${habit.id}" class="toggle-label block overflow-hidden h-7 rounded-full bg-gray-300 cursor-pointer transition-colors duration-200 ease-in-out"></label>
+                    <div class="relative inline-block w-14 mr-2 align-middle select-none">
+                        <input type="checkbox" id="toggle-${habit.id}" class="toggle-checkbox absolute block w-7 h-7 rounded-full bg-white border-4 appearance-none cursor-pointer border-gray-300" onchange="toggleStory(${habit.id})"/>
+                        <label for="toggle-${habit.id}" class="toggle-label block overflow-hidden h-7 rounded-full bg-gray-300 cursor-pointer"></label>
                     </div>
                 </div>
-
-                <!-- Area Cerita & Foto Bukti (Awalnya Sembunyi) -->
-                <div id="story-area-${habit.id}" class="hidden mt-4 pt-4 border-t border-dashed border-gray-200 relative z-10 transition-all duration-300">
-                    <!-- Textarea Cerita -->
-                    <textarea id="cerita-${habit.id}" rows="2" placeholder="${habit.prompt}" class="w-full text-sm border-2 border-gray-100 rounded-xl px-3 py-2 bg-gray-50 focus:outline-none focus:border-blue-400 focus:bg-white transition-all text-gray-700 resize-none mb-3"></textarea>
-                    
-                    <!-- Upload Foto Bukti -->
+                <div id="story-area-${habit.id}" class="hidden mt-4 pt-4 border-t border-dashed border-gray-200">
+                    <textarea id="cerita-${habit.id}" rows="2" placeholder="Catatan opsional..." class="w-full text-sm border-2 border-gray-100 rounded-xl px-3 py-2 bg-gray-50 focus:outline-none focus:border-blue-400 resize-none mb-3"></textarea>
                     <div class="flex items-center gap-3">
                         <input type="file" id="bukti-${habit.id}" accept="image/*" class="hidden" onchange="previewBukti(this, ${habit.id})">
-                        <label for="bukti-${habit.id}" class="file-upload-label flex items-center gap-2 bg-blue-100 text-blue-600 px-3 py-1.5 rounded-lg text-xs font-bold border border-blue-200 hover:bg-blue-200">
+                        <label for="bukti-${habit.id}" class="cursor-pointer flex items-center gap-2 bg-blue-100 text-blue-600 px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-blue-200">
                             <i class="fa-solid fa-camera"></i> Unggah Bukti
                         </label>
-                        <!-- Wadah Preview Foto Kecil -->
-                        <div id="preview-container-${habit.id}" class="hidden flex items-center gap-2 bg-green-50 px-2 py-1 rounded-lg border border-green-100">
-                            <img id="img-preview-${habit.id}" class="w-6 h-6 object-cover rounded shadow-sm">
-                            <span class="text-[10px] font-bold text-green-600"><i class="fa-solid fa-check"></i> Bukti siap!</span>
-                        </div>
+                        <div id="preview-container-${habit.id}" class="hidden flex items-center gap-2 bg-green-50 px-2 py-1 rounded-lg"><img id="img-preview-${habit.id}" class="w-6 h-6 object-cover rounded shadow-sm"><span class="text-[10px] font-bold text-green-600">Siap!</span></div>
                     </div>
                 </div>
             `;
             container.appendChild(card);
-            
-            // Inisialisasi storage untuk bukti
             buktiBase64Strings[habit.id] = "";
         });
 
-        // Menampilkan Textarea & Area Foto saat dicentang
         function toggleStory(id) {
             const area = document.getElementById(`story-area-${id}`);
             const checkbox = document.getElementById(`toggle-${id}`);
-            if(checkbox.checked) {
-                area.classList.remove('hidden');
-                setTimeout(() => area.classList.add('opacity-100'), 10);
-            } else {
-                area.classList.add('hidden');
-                area.classList.remove('opacity-100');
-                // Reset input jika dimatikan
-                document.getElementById(`cerita-${id}`).value = "";
-                document.getElementById(`bukti-${id}`).value = "";
-                document.getElementById(`preview-container-${id}`).classList.add('hidden');
-                buktiBase64Strings[id] = "";
-            }
+            if(checkbox.checked) area.classList.remove('hidden');
+            else { area.classList.add('hidden'); document.getElementById(`cerita-${id}`).value = ""; document.getElementById(`bukti-${id}`).value = ""; document.getElementById(`preview-container-${id}`).classList.add('hidden'); buktiBase64Strings[id] = ""; }
         }
 
-        // Preview dan Convert Foto Profil ke Base64
         function previewProfileImage(input) {
             if (input.files && input.files[0]) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    const preview = document.getElementById('profilPreview');
-                    preview.src = e.target.result;
-                    preview.classList.remove('hidden');
-                    
-                    document.getElementById('profilIcon').classList.add('hidden');
-                    document.getElementById('profilText').classList.add('hidden');
-
-                    profilBase64String = e.target.result; // Simpan untuk dikirim ke Apps Script
-                }
-                reader.readAsDataURL(input.files[0]);
+                const r = new FileReader();
+                r.onload = e => { document.getElementById('profilPreview').src = e.target.result; document.getElementById('profilPreview').classList.remove('hidden'); document.getElementById('profilIcon').classList.add('hidden'); document.getElementById('profilText').classList.add('hidden'); profilBase64String = e.target.result; }
+                r.readAsDataURL(input.files[0]);
             }
         }
 
-        // Preview dan Convert Foto Bukti Kegiatan ke Base64
         function previewBukti(input, id) {
             if (input.files && input.files[0]) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    const container = document.getElementById(`preview-container-${id}`);
-                    const img = document.getElementById(`img-preview-${id}`);
-                    
-                    img.src = e.target.result;
-                    container.classList.remove('hidden');
-                    
-                    buktiBase64Strings[id] = e.target.result; // Simpan untuk dikirim
-                }
-                reader.readAsDataURL(input.files[0]);
+                const r = new FileReader();
+                r.onload = e => { document.getElementById(`img-preview-${id}`).src = e.target.result; document.getElementById(`preview-container-${id}`).classList.remove('hidden'); buktiBase64Strings[id] = e.target.result; }
+                r.readAsDataURL(input.files[0]);
             }
         }
 
-        // Fungsi Kirim Data ke Google Apps Script
         async function submitData(event) {
-            event.preventDefault(); // Mencegah form reload bawaan browser
-
+            event.preventDefault();
             const btn = document.getElementById('simpanBtn');
-            const namaAnak = document.getElementById('namaAnak').value.trim();
+            const nama = document.getElementById('namaAnak').value.trim();
+            const kelas = document.getElementById('kelasAnak').value;
 
-            if (!namaAnak) {
-                alert("Hei Jagoan, jangan lupa tulis namamu dulu ya!");
-                document.getElementById('namaAnak').focus();
+            if (!nama || !kelas) {
+                alert("Hei Jagoan, Nama dan Kelas wajib diisi ya!");
                 return;
             }
 
             btn.innerHTML = "<i class='fa-solid fa-spinner fa-spin'></i> Merekam Data... ⏳";
             btn.disabled = true;
-            btn.classList.add('opacity-80', 'cursor-not-allowed');
 
-            // Susun data (payload)
-            const payload = {
-                nama: namaAnak,
-                fotoProfilBase64: profilBase64String,
-                kebiasaan: {}
-            };
-
-            // Loop 1 sampai 7 untuk mengumpulkan data form
+            const payload = { nama: nama, kelas: kelas, fotoProfilBase64: profilBase64String, kebiasaan: {} };
             for(let i=1; i<=7; i++) {
                 payload.kebiasaan[i] = {
                     status: document.getElementById(`toggle-${i}`).checked ? "Ya" : "Tidak",
                     cerita: document.getElementById(`cerita-${i}`) ? document.getElementById(`cerita-${i}`).value : "",
-                    fotoBukti: buktiBase64Strings[i] // Mengambil dari variabel base64 yang sudah disiapkan
+                    fotoBukti: buktiBase64Strings[i]
                 }
             }
 
-            // Kirim ke Backend GAS
             try {
-                const response = await fetch(GAS_API_URL, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "text/plain;charset=utf-8", 
-                    },
-                    body: JSON.stringify(payload)
-                });
-                
+                const response = await fetch(GAS_API_URL, { method: "POST", body: JSON.stringify(payload) });
+                const result = await response.json();
+                if(result.success) {
+                    document.getElementById('successModal').classList.remove('hidden');
+                    document.getElementById('successModal').classList.add('flex');
+                    setTimeout(() => { document.getElementById('successModal').classList.remove('opacity-0'); document.getElementById('modalContent').classList.remove('scale-95'); document.getElementById('modalContent').classList.add('scale-100'); }, 10);
+                } else alert("Error: " + result.error);
+            } catch(err) {
+                alert("Gagal terhubung ke server.");
+            } finally {
+                btn.innerHTML = "<i class='fa-solid fa-paper-plane'></i> Kirim Laporan";
+                btn.disabled = false;
+            }
+        }
+
+        // FUNGSI UNTUK MENGAMBIL DAN MENAMPILKAN DATA REKAP
+        async function bukaRekap() {
+            const modal = document.getElementById('rekapModal');
+            const content = document.getElementById('rekapContent');
+            const tbody = document.getElementById('rekapTableBody');
+            
+            modal.classList.remove('hidden'); modal.classList.add('flex');
+            setTimeout(() => { modal.classList.remove('opacity-0'); content.classList.remove('scale-95'); content.classList.add('scale-100'); }, 10);
+            
+            tbody.innerHTML = '<tr><td colspan="4" class="text-center p-8 text-gray-500">Mengambil data rekap dari server... <i class="fa-solid fa-spinner fa-spin text-xl ml-2"></i></td></tr>';
+
+            try {
+                // Mengambil data dari Backend GAS menggunakan fungsi doGet
+                const response = await fetch(GAS_API_URL);
                 const result = await response.json();
                 
-                if(result.success) {
-                    showModal(`Hebat ${namaAnak}! Data kebiasaan baikmu hari ini sudah tersimpan.`);
+                if(result.success && result.data.length > 0) {
+                    tbody.innerHTML = "";
+                    result.data.forEach((row, index) => {
+                        let colorClass = "text-gray-800 bg-gray-100";
+                        if(row.statusWarna.includes("🟢")) colorClass = "text-green-700 bg-green-100";
+                        else if(row.statusWarna.includes("🟡")) colorClass = "text-yellow-700 bg-yellow-100";
+                        else if(row.statusWarna.includes("🔴")) colorClass = "text-red-700 bg-red-100";
+
+                        tbody.innerHTML += `
+                            <tr class="border-b hover:bg-blue-50 transition">
+                                <td class="p-3 text-sm text-gray-500">${index + 1}</td>
+                                <td class="p-3">
+                                    <div class="font-bold text-gray-800 text-base">${row.nama}</div>
+                                    <div class="text-xs text-white bg-blue-500 inline-block px-2 py-0.5 rounded-md mt-1 shadow-sm"><i class="fa-solid fa-graduation-cap"></i> Kelas ${row.kelas}</div>
+                                </td>
+                                <td class="p-3 text-sm font-semibold text-gray-600"><i class="fa-regular fa-clock"></i> ${row.tanggal}</td>
+                                <td class="p-3">
+                                    <span class="text-xs font-black px-3 py-1.5 rounded-lg shadow-sm border border-white ${colorClass}">${row.statusWarna}</span>
+                                </td>
+                            </tr>
+                        `;
+                    });
                 } else {
-                    alert("Ups! Ada kesalahan sistem: " + result.error);
+                    tbody.innerHTML = '<tr><td colspan="4" class="text-center p-8 text-gray-500"><i class="fa-solid fa-folder-open text-3xl mb-2 block"></i> Belum ada data hari ini.</td></tr>';
                 }
-            } catch(err) {
-                console.error(err);
-                alert("Gagal terhubung ke server. Pastikan internetmu lancar dan coba lagi ya!");
-            } finally {
-                btn.innerHTML = "<i class='fa-solid fa-check-circle'></i> Simpan & Lihat Hasil";
-                btn.disabled = false;
-                btn.classList.remove('opacity-80', 'cursor-not-allowed');
+            } catch (error) {
+                 tbody.innerHTML = '<tr><td colspan="4" class="text-center p-8 text-red-500"><i class="fa-solid fa-triangle-exclamation text-3xl mb-2 block"></i> Gagal memuat rekap. Pastikan internetmu aktif ya!</td></tr>';
             }
         }
 
-        // Tampilkan Modal Sukses
-        function showModal(message) {
-            document.getElementById('successMessage').innerText = message;
-            const modal = document.getElementById('successModal');
-            const content = document.getElementById('modalContent');
-            
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            
-            setTimeout(() => {
-                modal.classList.remove('opacity-0');
-                content.classList.remove('scale-95');
-                content.classList.add('scale-100');
-            }, 10);
-        }
-
-        // Tutup Modal dan Reload Halaman
-        function closeModal() {
-            const modal = document.getElementById('successModal');
-            const content = document.getElementById('modalContent');
-            
-            modal.classList.add('opacity-0');
-            content.classList.remove('scale-100');
-            content.classList.add('scale-95');
-            
-            setTimeout(() => {
-                modal.classList.add('hidden');
-                modal.classList.remove('flex');
-                window.location.reload(); // Refresh setelah ditutup agar form bersih kembali
-            }, 300);
+        function tutupRekap() {
+            const modal = document.getElementById('rekapModal');
+            const content = document.getElementById('rekapContent');
+            modal.classList.add('opacity-0'); content.classList.remove('scale-100'); content.classList.add('scale-95');
+            setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); }, 300);
         }
     </script>
 </body>
